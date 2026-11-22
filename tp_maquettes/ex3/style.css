@@ -1,0 +1,100 @@
+:root {
+  --violet-fonce: #370031;
+  --bordeaux: #832232;
+  --violet-carte: #4c0043;
+  --blanc: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--violet-fonce);
+  color: var(--blanc);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+  background-color: var(--bordeaux);
+  padding: 15px 20px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+main {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  align-items: stretch;
+}
+
+.carte {
+  flex: 1;
+  background-color: var(--violet-carte);
+  border-radius: 30px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.carte h2 {
+  background-color: var(--bordeaux);
+  border-radius: 8px;
+  padding: 10px 15px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.contenu {
+  flex: 1;
+  background-color: var(--bordeaux);
+  border-radius: 25px;
+  padding: 20px;
+  text-align: center;
+  font-size: 15px;
+  line-height: 1.5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contenu img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  border-radius: 15px;
+  object-fit: cover;
+}
+
+footer {
+  background-color: var(--bordeaux);
+  padding: 18px 20px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.bouton {
+  display: inline-block;
+  background-color: var(--violet-fonce);
+  color: var(--blanc);
+  text-decoration: none;
+  padding: 10px 22px;
+  border-radius: 10px;
+  font-size: 15px;
+}
+
+@media (max-width: 800px) {
+  main {
+    flex-direction: column;
+  }
